@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- pt: Animate CSS, be careful of the version, may need to change id/class if use new version -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+
+    <!-- pt: css animation -->
+    <style>
+        .slideanimate {
+            visibility: hidden;
+        }
+
+        .slideanimateA {
+            visibility: hidden;
+        }
+
+        .slide {
+            visibility: visible;
+        }
+    </style>
+
+    <title>Assignment 6</title>
+</head>
+
+<body>
+    <!-- pt: set a big div(long height), and control pic animation timing within that long height -->
+    <div class="container-fluid text-center" style="background: black;min-height: 10000px">
+        <div class="jumbotron jumbotron-fluid" style="text-align: center; height: 100vh; background-image: url(https://res.cloudinary.com/dvl0zbtvn/image/upload/v1639904261/a6/variant-of-concern-map-1400-x_c1ijvz.jpg); 
+            background-position: -10vw 0; background-repeat: no-repeat; background-size: cover;">
+            <div class="container" style="height: 100vh; padding-top: 30vh;">
+                <h1 class="display-4" style="font-weight: bold; color: white; text-shadow: 5px 5px 4px black;">
+                    COVID-19病毒「高關注變異株」一覽</h1>
+                <p1 class="display-5" style="font-weight: bold; color: white; text-shadow: 5px 5px 4px black;">洪榕志/整理報導 日期:12月19日</p1>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 50vh;">
+            <p class="display-5" style="text-align:left; font-weight: bold; color: white; font-size: larger;">
+                COVID-19爆發自今已經兩年，其病毒株歷經了多次變種，截至今日，被世衡列為「高關注變異株」已多達五種。它們各有各的特徵，而且不同的變異株對疫苗有不同程度的抗性，令疫苗難以完全根絕病毒，加深了杜絕COVID-19的難度。接下來，就來看看各種「高關注變異株」的異同。
+            </p>
+        </div>
+        <div class="container" style="margin-top: 100vh; text-align:left;">
+            <h1 style="font-weight: bold; font-size: larger; color: white;">參考圖片</h1>
+            <div class="row"><a
+                    href="https://cdn3.vox-cdn.com/thumbor/tI_pgtkb6RlfKrPJ2Z84NpV6VYI=/0x1080/volume-assets.voxmedia.com/production/a9369f3697a931e025b06cc49cad9f50/VDC_XEC_019_variants_explained_CLEAN.jpg">
+                    https://cdn3.vox-cdn.com/thumbor/tI_pgtkb6RlfKrPJ2Z84NpV6VYI=/0x1080/volume-assets.voxmedia.com/production/a9369f3697a931e025b06cc49cad9f50/VDC_XEC_019_variants_explained_CLEAN.jpg</a>
+            </div>
+            <div class="row"><a
+                    href="https://www.gannett-cdn.com/presto/2021/12/01/USAT/ba22eeb2-2491-48e2-85b0-d8bb653d717d-VPC_OMICRON_VARIANT_HITS_US_GETTY_WIDE.jpg">
+                    https://www.gannett-cdn.com/presto/2021/12/01/USAT/ba22eeb2-2491-48e2-85b0-d8bb653d717d-VPC_OMICRON_VARIANT_HITS_US_GETTY_WIDE.jpg</a>
+            </div>
+            <div class="row"><a
+                    href="https://cdn.the-scientist.com/assets/articleNo/69472/hImg/44422/variant-of-concern-map-1400-x.jpg">
+                    https://cdn.the-scientist.com/assets/articleNo/69472/hImg/44422/variant-of-concern-map-1400-x.jpg</a>
+            </div>
+        </div>
+
+        <img src="https://res.cloudinary.com/dvl0zbtvn/image/upload/v1639900190/a6/Alpha_foqp3j.jpg"
+            class="img-fluid slideanimate" data-pos="2500" data-direction="fadeInLeft"
+            style="position:fixed;left:5vw;top:3vh;width:40vw;">
+        <img src="https://res.cloudinary.com/dvl0zbtvn/image/upload/v1639900190/a6/Beta_psguqs.jpg"
+            class="img-fluid slideanimate" data-pos="3500" data-direction="fadeInDown"
+            style="position:fixed;left:55vw;top:3vh;width:40vw;">
+        <img src="https://res.cloudinary.com/dvl0zbtvn/image/upload/v1639900191/a6/Gamma_u4k3k3.jpg"
+            class="img-fluid slideanimate" data-pos="4500" data-direction="fadeInUp"
+            style="position:fixed;left:5vw;top:50vh;width:40vw;">
+        <img src="https://res.cloudinary.com/dvl0zbtvn/image/upload/v1639900190/a6/Delta_aauptw.jpg"
+            class="img-fluid slideanimate" data-pos="5500" data-direction="fadeInRight"
+            style="position:fixed;left:55vw;top:50vh;width:40vw;">
+        <img src="https://res.cloudinary.com/dvl0zbtvn/image/upload/v1639900190/a6/Omicron_pdi8wq.jpg"
+            class="img-fluid slideanimateA" data-pos="8000" data-direction="fadeIn"
+            style="position:fixed;left:20vw;top:17vh;width:60vw;">
+
+
+        <!--        <div style="position:absolute;background-color:rgba(0,0,0,0.5);width:50vw;min-height:500px"></div>-->
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script>
+        // pt: same as key frame animation jq
+        $(function () {
+            var winh = $(window).height();
+            $(window).scroll(function () {
+                var scrolled = $(window).scrollTop();
+
+                $(".slideanimate").each(function () {
+                    if (scrolled > $(this).data("pos")) {
+                        $(this).addClass("animated slide " + $(this).data("direction"));
+                    }
+                    if (scrolled < $(this).data("pos")) {
+                        $(this).removeClass("animated slide " + $(this).data(
+                            "direction"));
+                    }
+                    if (scrolled > $(".slideanimateA").data("pos")) {
+                        $(this).removeClass("animated slide " + $(this).data(
+                            "direction"));
+                    }
+                });
+                $(".slideanimateA").each(function () {
+                    if (scrolled > $(this).data("pos")) {
+                        $(this).addClass("animated slide " + $(this).data("direction"));
+                    }
+                    if (scrolled < $(this).data("pos")) {
+                        $(this).removeClass("animated slide " + $(this).data(
+                            "direction"));
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
